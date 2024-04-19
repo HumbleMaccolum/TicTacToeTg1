@@ -36,7 +36,7 @@ public class TicTacToeTg extends JComponent {
             j = rand.nextInt(3);
         } while (field[i][j] != FIELD_EMPTY);
 
-        field[i][j] = FIELD_O;
+        field[i][j] = FIELD_X;
     }
 
     @Override
@@ -69,7 +69,7 @@ public class TicTacToeTg extends JComponent {
                 }
             } else {
                 if (field[i][j] == FIELD_EMPTY) {
-                    field[i][j] = FIELD_X;
+                    field[i][j] = FIELD_O;
                     Obotturn();
                     repaint();
                     int res = checkState();
